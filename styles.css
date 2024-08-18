@@ -37,7 +37,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    font-size: 20px;
+    font-size: 18px;
     margin: auto;
     width: 50%;
 }
@@ -74,7 +74,35 @@ a {
     margin-top: 10px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        width: 90%; 
+        margin: 0 auto;
+    }
+
+    header {
+        width: 100%;
+        text-align: left;
+    }
+
+    .cta-button {
+        margin: 20px 0; 
+        align-self: flex-start; 
+    }
+
+    .img-fluid {
+        max-width: 50%;
+        margin: 20px 0 20px auto; 
+    }
+
+    p {
+        width: 100%; 
+        text-align: left; 
+    }
+}
+
+/* @media (min-width: 768px) {
     .container {
         flex-direction: row;
         width: auto; 
@@ -96,7 +124,7 @@ a {
     .cta-button {
         font-size: 20px;
     }
-}
+} */
 
 .img-fluid {
     display: block;
